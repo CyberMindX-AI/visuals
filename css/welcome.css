@@ -1,0 +1,103 @@
+/* Welcome page styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  height: 100vh;
+}
+
+.container {
+  background: linear-gradient(to right, #ffffff, #ffecd2);
+  color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #ffffff, #ffecd2);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+}
+
+
+#svg {
+  height: 200px;
+  width: 200px;
+  stroke: #000;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Container for name below the A */
+.name-container {
+  height: auto;
+  overflow: visible;
+}
+
+/* Logo text - AMAZE VISUALS */
+.logo-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  letter-spacing: 10px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* Button Styling */
+.btnn {
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnn:hover {
+  background-color: orange;
+  color: black;
+  border-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
